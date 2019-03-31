@@ -246,9 +246,7 @@
                 <h1 class="loc-header">location</h1>
                 <br><br>
                 <div class="map-content">
-                    <div id="map">
-
-                    </div>
+                    <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJFcDHwQa11okRIsF8ZmMvRWo&key=AIzaSyBzorLVlgHDs7m-CwrTDzMeyzl-AGRNyXE" allowfullscreen></iframe>
                     <div class="hours">
                         <div class="content-bold">Monday - Thursday</div>
                         <div class="content-info">Full Menu 5pm - 9:30pm</div>
@@ -266,9 +264,10 @@
                 </div>
                 <div class="empty"></div>
                 <div class="address">
-                    <iframe width="600" height="450" frameborder="0" style="border:0"
-                        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJFcDHwQa11okRIsF8ZmMvRWo&key=..." allowfullscreen>
-                    </iframe>
+                    <a href="https://maps.google.com/?q=165 Monroe Ave, Rochester, NY 14607" target="blank" class="address">
+                        <div>165 Monroe Ave</div>
+                        <div>Rochester, NY 14607</div>
+                    </a>
                 </div>
                 <br>
                 <div class="content-bold">
@@ -300,21 +299,7 @@
             <p>&copy 2018 Rocco</p>
         </div>
     </footer>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzorLVlgHDs7m-CwrTDzMeyzl-AGRNyXE&callback=myMap"
-    type="text/javascript"></script>
     <script src="scripts/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-        var $nav = $('nav');
-        var $sticky = $nav.before($nav.clone().addClass("sticky"));
-
-        $(window).on("scroll", function(){
-            var scrollFromTop = $(window).scrollTop();
-            $("body").toggleClass("scroll", (scrollFromTop > 900));
-        });
-        });
-    </script>
 </body>
 
 </html>
